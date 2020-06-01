@@ -10,7 +10,8 @@ const { VueLoaderPlugin } = require('vue-loader')
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
-  assets: 'assets/'
+  assets: 'assets/',
+  img: __dirname
 }
 
 // Pages const for HtmlWebpackPlugin
@@ -44,7 +45,9 @@ module.exports = {
         }
       }
     }
-  },
+  }, 
+  
+
   module: {
     rules: [{
       test: /\.pug$/,
@@ -81,7 +84,7 @@ module.exports = {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
-        name: '[name].[ext]'
+        name: 'images/'
       }
     }, {
       test: /\.scss$/,
@@ -126,7 +129,7 @@ module.exports = {
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/**/*.png`, to: `${PATHS.assets}images`, flatten: true }, // flatten: true - Removes all directory references and only copies file names
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ]),

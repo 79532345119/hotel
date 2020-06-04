@@ -1,9 +1,32 @@
 .header {
-position: relative;
-width: 1440px;
+width: 100%;
 height: 70px;
-left: 0px;
-
-background: #FFFFFF;
 box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+font-family: $menuFont;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+
 }
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;      
+}
+
+.header__item {
+    padding-right: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active{
+    font-weight: bold;
+}
+
+@import "./src/pug/includes/modules/logo/logo.scss";
+@import "./src/pug/includes/modules/button-sign-in/button-sign-in.scss";
+@import "./src/pug/includes/modules/button-registration/button-registration.scss";

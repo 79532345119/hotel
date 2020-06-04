@@ -1,4 +1,18 @@
 .header
     include ../logo/logo
-    include ../header_menu/header_menu
+    nav(class='header__nav')
+        ul(class='header__list')
+           li(class='header__item')
+            a(href='#', class='header__link') О нас
+           li(class='header__item')
+            a(href='#', class='header__link') Услуги
+           li(class='header__item')
+            a(href='#', class='header__link') Вакансии
+           li(class='header__item')
+            a(href='#', class='header__link') Новости
+           li(class='header__item')
+            a(href='#', class='header__link') Соглашения
+          
+    include ../button-sign-in/button-sign-in
+    include ../button-registration/button-registration
     

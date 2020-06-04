@@ -1,10 +1,12 @@
 // JS
 import './js/'
 
+// CSS (reset)
+
+import './assets/css/reset.css'
+
 // SCSS
 import './assets/scss/main.scss'
 
-// CSS (example)
-// import './assets/css/main.css'
 
 

@@ -1,9 +1,22 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+
+
+
+
 @import "../scss/utils/fonts.scss";
 @import "../scss/utils/vars.scss";
 @import "./src/pug/includes/modules/header/header.scss";
-@import "./src/pug/includes/modules/logo/logo.scss";
-@import "./src/pug/includes/modules/header_menu/header_menu.scss";
-@import "./src/pug/includes/modules/menu_item_home/menu_item_home.scss";
+
 
 
 

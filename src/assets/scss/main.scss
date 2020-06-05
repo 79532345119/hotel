@@ -2,6 +2,8 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
 .wrapper {
     max-width: 1160px;
     margin: 0 auto;
@@ -16,6 +18,7 @@ body {
 @import "../scss/utils/fonts.scss";
 @import "../scss/utils/vars.scss";
 @import "./src/pug/includes/modules/header/header.scss";
+@import "./src/pug/pages/index.scss";
 
 
 

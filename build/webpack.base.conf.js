@@ -129,7 +129,8 @@ module.exports = {
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/**/*.png`, to: `${PATHS.assets}images`, flatten: true }, // flatten: true - Removes all directory references and only copies file names
+      { from: `${PATHS.src}/**/*.png`, to: `${PATHS.assets}images`, flatten: true },
+      { from: `${PATHS.src}/**/*.svg`, to: `${PATHS.assets}images`, flatten: true }, // flatten: true - Removes all directory references and only copies file names
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ]),

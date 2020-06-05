@@ -4,14 +4,17 @@ block variables
   - var title = 'TOXIN main page';
   - var description = 'Choose your room';
   - var pageClass = 'index-page';
+  - var slogan = 'Лучшие номера для вашей работы, отдыха и просто вдохновения';
 
 block content
   section
     .container
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-  example-component
+      .bg-image
+        img(src='../assets/images/bg-image-main.svg', alt=slogan)
+      
+      .wrapper
+        .slogan #{slogan}
+  
 
 
 block script

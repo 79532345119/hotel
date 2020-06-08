@@ -1,49 +1,64 @@
 .footer
-  
-    nav(class='footer__nav')
+  .footer__menu
+    .footer__col-1
       ul(class='footer__list')
-        ul(class='footer__col') 
-          li.footer__logo
+        li.footer__logo
             include ../logo/logo
-          li.slogan2 
-            p Бронирование номеров в лучшем
-            p отеле 2019 года по версии 
-            p ассоциации «Отельные взгляды»
-        ul(class='footer__col') навигация
-          li.footer__item 
-            a(href='#', class='footer__link') О нас
-          li.footer__item
-            a(href='#', class='footer__link') Новости
-          li.footer__item
-            a(href='#', class='footer__link') Служба поддержки
-          li.footer__item
-            a(href='#', class='footer__link') Услуги
-          
-        ul(class='footer__col') о нас
-          li.footer__item 
+        li.slogan2 
+          p Бронирование номеров в лучшем
+          p отеле 2019 года по версии 
+          p ассоциации «Отельные взгляды»
+    
+    .footer__col-2
+      .footer__title навигация
+      ul(class='footer__list')
+        li.footer__item 
+          a(href='#', class='footer__link') О нас
+        li.footer__item
+          a(href='#', class='footer__link') Новости
+        li.footer__item
+          a(href='#', class='footer__link') Служба поддержки
+        li.footer__item
+          a(href='#', class='footer__link') Услуги
+
+    .footer__col-3
+      .footer__title о нас
+      ul(class='footer__list')
+        li.footer__item 
             a(href='#', class='footer__link') О сервисе
-          li.footer__item
+        li.footer__item
             a(href='#', class='footer__link') Наша команда
-          li.footer__item
+        li.footer__item
             a(href='#', class='footer__link') Вакансии
-          li.footer__item
+        li.footer__item
             a(href='#', class='footer__link') Инвесторы
 
-        ul(class='footer__col') служба поддержки
-          li.footer__item 
+    .footer__col-4
+      .footer__title служба поддержки
+      ul(class='footer__list')
+        li.footer__item 
             a(href='#', class='footer__link') Соглашения
-          li.footer__item
+        li.footer__item
             a(href='#', class='footer__link') Сообщества
-          li.footer__item
+        li.footer__item
             a(href='#', class='footer__link') Связь с нами
 
-        ul(class='footer__col') подписка
-          li.footer__item 
+    .footer__col-5
+      .footer__title подписка
+      ul(class='footer__list')
+        li.footer__item 
             a(href='#', class='footer__link') 
               p 'Получайте специальные'
               p 'предложения и новости сервиса')
-          li.footer__item
+        li.footer__item
             form(action="", method="post") <!-- action"" - куда отправить данные из формы -->
               input(type="email", value="E-mail", name="E-mail")
               input(type="button", value="OK")
-          
+
+    
+  
+  .footer__copiright-bar-and-media
+
+  .footer__creative
+
+  

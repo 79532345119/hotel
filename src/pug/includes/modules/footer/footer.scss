@@ -1,8 +1,6 @@
 .footer {
-    background: red;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-    height: 372px;
-    padding: 104px 0;
+    //background: red;
+    //padding: 104px 0;
 }
 
 .footer__menu {
@@ -10,6 +8,8 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    //height: 372px;
 }
 
 .footer__title {
@@ -17,12 +17,100 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.footer__list .footer__item .footer__link {
+.footer__list .footer__item .footer__link{
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
 }
 
+.footer__logo {
+margin-bottom: 20px;
+}
+
+
 .footer__link:hover, .footer__link:focus, .footer__link:active{
     font-weight: 700;
+}
+.slogan2 {
+    width: 260px;
+    height: 72px;
+    text-align: justify;
+}
+.slogan2 p, .footer__link p {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
+
+.footer_form {
+    width: 260px;
+height: 44px;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+display: flex;
+justify-content: space-between;
+}
+
+.footer_input {
+color: rgba(31, 32, 65, 0.25);
+height: 100%;
+padding: 0px;
+border: none;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+//line-height: 24px;
+
+padding-left: 15px;
+
+}
+
+.footer_btn {
+    height: 44px;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+/* Primary Gradient */
+
+color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.footer__copiright-bar-and-social-media {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social__list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__social__item {
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    /* identical to box height */
+
+//    display: flex;
+//    align-items: center;
+//    text-align: center;
+
+    /* Primary Gradient */
+
+    color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }

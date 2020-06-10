@@ -48,16 +48,33 @@
       ul(class='footer__list')
         li.footer__item 
             a(href='#', class='footer__link') 
-              p 'Получайте специальные'
-              p 'предложения и новости сервиса')
+              p Получайте специальные
+              p предложения и новости сервиса
         li.footer__item
-            form(action="", method="post") <!-- action"" - куда отправить данные из формы -->
-              input(type="email", value="E-mail", name="E-mail")
-              input(type="button", value="OK")
+            form(class="footer_form" action="", method="post") <!-- action"" - куда отправить данные из формы -->
+              span
+                input(class="footer_input" type="email", value="E-mail", name="E-mail")
+              span
+                input(class="footer_btn" type="image" src="assets/images/arrow_forward.png")
 
     
   
-  .footer__copiright-bar-and-media
+  .footer__copiright-bar-and-social-media
+    span.copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
+    nav(class='footer__social__nav')
+      ul(class='footer__social__list')
+        li(class='footer__social__item')
+          a(href='#', class='footer__social__link')
+            <i class="fab fa-twitter"></i>
+            
+        li(class='footer__social__item')
+          a(href='#', class='footer__social__link')
+            <i class="fab fa-facebook-square"></i>
+            
+        li(class='footer__social__item')
+          a(href='#', class='footer__social__link')
+            <i class="fab fa-instagram"></i>
+            
 
   .footer__creative
 

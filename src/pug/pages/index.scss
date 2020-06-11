@@ -1,11 +1,11 @@
- .index-page {
-   max-height: 1343px;
-   }
- 
-.bg-image {
-   width: 1534px;
-   height: 1022px;
-   
+.index-page {
+  height: 1343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+   flex-grow: 1;
 }
 
 .slogan {
@@ -25,6 +25,6 @@
 
    
 
-    color: rgba(31, 32, 65, 0.75);
+   color: rgba(31, 32, 65, 0.75);
 
 }  
